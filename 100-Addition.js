@@ -32,3 +32,13 @@
 // ```
 // 9
 // ```
+
+function additionCheckpoint(num1, num2){
+    return num1 + num2
+}
+
+let proof = additionCheckpoint(5, 10);
+console.log(proof);
+
+let pudding = additionCheckpoint(-20, 50);
+console.log(pudding);

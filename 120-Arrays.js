@@ -26,18 +26,16 @@
 
 // should log
 
-
 // ```
 // 18
 // ```
 
-
-function arrayCheckpoint(arr){
-    return arr[0] + arr[arr.length - 1]
+function arrayCheckpoint(arr) {
+	return arr[0] + arr[arr.length - 1];
 }
 
-let addingArrayEntries = arrayCheckpoint([1,2,3,4,5,6,7,8,9,10]);
+let addingArrayEntries = arrayCheckpoint([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 console.log(addingArrayEntries);
 
-let testingAddingArrayEntries = arrayCheckpoint([-5,2,7,3,4]);
+let testingAddingArrayEntries = arrayCheckpoint([-5, 2, 7, 3, 4]);
 console.log(testingAddingArrayEntries);

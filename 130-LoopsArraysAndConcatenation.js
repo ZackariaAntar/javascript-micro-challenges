@@ -28,20 +28,19 @@
 
 // should log
 
-
 // ```
 // Oh! Hi There!
 // ```
 
-function loopsArrConcatCheckpoint(arr,index){
-       for (let i=index; i<arr.length; i++){
-        console.log(arr[i])
-    }
+function loopsArrConcatCheckpoint(arr, index) {
+	for (let i = index; i < arr.length; i++) {
+		console.log(arr[i]);
+	}
 }
 
-let testLoop = loopsArrConcatCheckpoint(['good', 'golly', 'miss', 'molly'], 2)
+let testLoop = loopsArrConcatCheckpoint(["good", "golly", "miss", "molly"], 2);
 console.log(testLoop);
-let testLoop1 = loopsArrConcatCheckpoint(['good', 'golly', 'miss', 'molly'], 1)
+let testLoop1 = loopsArrConcatCheckpoint(["good", "golly", "miss", "molly"], 1);
 console.log(testLoop1);
-let testLoop2 = loopsArrConcatCheckpoint(['good', 'golly', 'miss', 'molly'], 0)
+let testLoop2 = loopsArrConcatCheckpoint(["good", "golly", "miss", "molly"], 0);
 console.log(testLoop2);

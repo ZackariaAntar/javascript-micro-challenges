@@ -28,13 +28,12 @@
 
 // should log
 
-
 // ```
 // 9
 // ```
 
-function additionCheckpoint(num1, num2){
-    return num1 + num2
+function additionCheckpoint(num1, num2) {
+	return num1 + num2;
 }
 
 let proof = additionCheckpoint(5, 10);

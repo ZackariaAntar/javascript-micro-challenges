@@ -47,3 +47,22 @@
 // ```
 // The numbers are the same!
 // ```
+
+function conditionalCheckpoint(num1,num2){
+    if(num1>num2){
+        return 'The first number was bigger!';
+    }else if(num1<num2){
+        return "The second number was bigger!";
+    }else{
+        return "The numbers are the same!";
+
+    }
+}
+
+let checkForFirst = conditionalCheckpoint(5, 4);
+let checkForSecond = conditionalCheckpoint(6, 7);
+let checkForEqual = conditionalCheckpoint(8, 8);
+
+console.log(checkForFirst);
+console.log(checkForSecond);
+console.log(checkForEqual);

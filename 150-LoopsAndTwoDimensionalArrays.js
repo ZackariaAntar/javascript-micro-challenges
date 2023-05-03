@@ -31,4 +31,22 @@
 // 21
 // ```
 
+function loops2DArrayCheckpoint(arr){
+    let findingValues = 0
+    for (entries of arr){
+        for (item of entries){
+            findingValues += item
+
+        }
+    }return findingValues
+}
+
+
+
+
+let testingLoops2DArrayCheckpoint = loops2DArrayCheckpoint([[1, 2], [3, 4, 5],[6]]);
+console.log(testingLoops2DArrayCheckpoint);
+
+let testingLoops2DArrayCheckpoint2 = loops2DArrayCheckpoint([[1, 2], [3, 4, 5]]);
+console.log(testingLoops2DArrayCheckpoint2);
 

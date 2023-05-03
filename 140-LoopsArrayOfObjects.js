@@ -39,4 +39,14 @@
 // 28
 // ```
 
+function loopsArrObjCheckpooint(arr){
+    let foundValue = 0;
+    for (obj of arr){
+        foundValue += obj.yearsOfExperience
+    }return foundValue
+}
 
+let testingArrObjs = loopsArrObjCheckpooint([{ name: "Tony", yearsOfExperience: 10 }, { name: "Carla", yearsOfExperience: 4 },{ name: "Kris", yearsOfExperience: 14 }])
+
+
+console.log(testingArrObjs);

@@ -41,7 +41,7 @@
 function loopsArrObjCheckpooint(arr) {
 	let foundValue = 0;
 	for (obj of arr) {
-		foundValue += obj.yearsOfExperience;
+		foundValue += Number(obj.yearsOfExperience);
 	}
 	return foundValue;
 }
@@ -53,3 +53,12 @@ let testingArrObjs = loopsArrObjCheckpooint([
 ]);
 
 console.log(testingArrObjs);
+
+
+let testingArrObjs2 = loopsArrObjCheckpooint([
+	{ name: "Tony", yearsOfExperience: '5000' },
+	{ name: "Carla", yearsOfExperience: 24 },
+	{ name: "Kris", yearsOfExperience: 141593 },
+]);
+
+console.log(testingArrObjs2);

@@ -1,52 +1,77 @@
 function calculateDamage(yourType, opponentType, attack, defense) {
-	if (yourType === opponentType) {
-		return (damage = 50 * (attack / defense) * 1);
+   let baseStats = (attack/defense)
+   if (yourType === opponentType) {
+      (damage = 50 * baseStats * .5)
+      return damage;
 	}
 
 	if (yourType === "fire" && opponentType === "grass") {
-		return (damage = 50 * (attack / defense) * 2);
+      (damage = 50 * baseStats * 2)
+
+      return damage;
 	}
 
 	if (yourType === "fire" && opponentType === "water") {
-		return (damage = 50 * (attack / defense) * 0.5);
+      damage = 50 * baseStats * 0.5;
+      return damage;
 	}
 
 	if (yourType === "fire" && opponentType === "electric") {
-		return (damage = 50 * (attack / defense) * 1);
+      damage = 50 * baseStats * 1;
+
+      return damage;
 	}
 
 	if (yourType === "grass" && opponentType === "fire") {
-		return (damage = 50 * (attack / defense) * 0.5);
+      damage = 50 * baseStats * 0.5;
+
+      return damage;
 	}
 	if (yourType === "grass" && opponentType === "water") {
-		return (damage = 50 * (attack / defense) * 2);
+      damage = 50 * baseStats * 2;
+
+      return damage;
 	}
 	if (yourType === "grass" && opponentType === "electric") {
-		return (damage = 50 * (attack / defense) * 1);
+      damage = 50 * baseStats * 1;
+
+      return damage;
 	}
 
 	if (yourType === "water" && opponentType === "fire") {
-		return (damage = 50 * (attack / defense) * 2);
+      damage = 50 * baseStats * 2;
+
+      return damage;
 	}
 
 	if (yourType === "water" && opponentType === "grass") {
-		return (damage = 50 * (attack / defense) * 0.5);
+      damage = 50 * baseStats * 0.5;
+
+      return damage;
 	}
 
 	if (yourType === "water" && opponentType === "electric") {
-		return (damage = 50 * (attack / defense) * 0.5);
+      damage = 50 * baseStats * 0.5;
+
+      return damage;
 	}
 
 	if (yourType === "electric" && opponentType === "water") {
-		return (damage = 50 * (attack / defense) * 2);
+      damage = 50 * baseStats * 2;
+
+      return damage;
 	}
 
 	if (yourType === "electric" && opponentType === "fire") {
-		return (damage = 50 * (attack / defense) * 1);
+      damage = 50 * baseStats * 1;
+
+      return damage;
 	}
 
 	if (yourType === "electric" && opponentType === "grass") {
-		return (damage = 50 * (attack / defense) * 1);
+      damage = 50 * baseStats * 1;
+
+      return damage;
 	}
 }
 
